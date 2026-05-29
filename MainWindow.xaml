@@ -1,0 +1,46 @@
+﻿<Window x:Class="Whitney.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Whitney"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <!-- to change the background to an image of the charbot logo -->
+    <Window.Background>
+        <ImageBrush ImageSource="Whitney1.jpg" Stretch="UniformToFill" />
+    </Window.Background>
+
+    <Grid>
+
+        <!-- Button to start chat -->
+        <Button
+            Height="65"
+            Width="300"
+            Margin="0,330,0,0"
+            Content="Start Chat"
+            FontSize="35"
+            FontStyle="Normal"
+            FontWeight="UltraBold"
+            Background="Blue"
+            Foreground="AliceBlue"
+            BorderBrush="White"
+            BorderThickness="3"
+            Click="startchat_click"
+             />
+
+        <!-- Text box to add a welcome message for the user -->
+        <TextBlock
+            Height="40"
+            Width="575"
+            Margin="0,435,0,0"
+            Text=" Welcome to Whitney your cybersecurity chatbot!"
+            FontSize="25"
+            FontStyle="Normal"
+            FontWeight="DemiBold"
+            Background="Transparent"
+            Foreground="White"
+            />
+
+    </Grid>
+</Window>

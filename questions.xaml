@@ -1,0 +1,49 @@
+﻿<Window x:Class="Whitney.questions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Whitney"
+        mc:Ignorable="d"
+        Title="questions" Height="600" Width="900">
+
+    <!-- to change the background to an image of the charbot logo -->
+    <Window.Background>
+        <ImageBrush ImageSource="Whitney.backhground.jpg" Stretch="UniformToFill" />
+    </Window.Background>
+    <Grid>
+        
+        <TextBox
+            Height="55"
+            Width="300"
+            Margin="0,220,150,0"
+            x:Name="Question"
+            FontSize="25"
+            />
+
+        <Button
+            Height="55"
+            Width="150"
+            Margin="300,220,0,0"
+            Content="Enter"
+            FontSize="25"
+            FontStyle="Normal"
+            FontWeight="UltraBold"
+            Background="Blue"
+            Foreground="AliceBlue"
+            BorderBrush="White"
+            BorderThickness="3"
+            Click="enter_question"
+             />
+        
+        <ListView
+            Height="300"
+            Width="450"
+            Margin="0,0,0,150" 
+            x:Name="show_chats"
+            />
+
+
+
+    </Grid>
+</Window>

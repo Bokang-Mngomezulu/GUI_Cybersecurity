@@ -1,0 +1,56 @@
+﻿<Window x:Class="Whitney.chatwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Whitney"
+        mc:Ignorable="d"
+        Title="chatwindow" Height="600" Width="900">
+
+    <!-- to change the background to an image of the charbot logo -->
+    <Window.Background>
+        <ImageBrush ImageSource="Whitney.backhground.jpg" Stretch="UniformToFill" />
+    </Window.Background>
+    <Grid>
+   <!-- Textbox to ask user for name-->
+        <TextBlock
+            Height="40"
+            Width="290"
+            Margin="0,0,0,100"
+            Text=" Please enter your name "
+            FontSize="25"
+            FontStyle="Oblique"
+            FontWeight="DemiBold"
+            Background="Transparent"
+            Foreground="White"
+            />
+
+        <TextBox
+            Height="55"
+            Width="250"
+            Margin="0,50,100,0"
+            FontSize="25"
+            x:Name="usernametextbox"
+            />
+
+        <Button
+            Height="55"
+            Width="100"
+            Margin="250,50,0,0"
+            Content="Enter"
+            FontSize="25"
+            FontStyle="Normal"
+            FontWeight="UltraBold"
+            Background="Blue"
+            Foreground="AliceBlue"
+            BorderBrush="White"
+            BorderThickness="3"
+            Click="questions"
+            
+             />
+
+
+
+
+    </Grid>
+</Window>
